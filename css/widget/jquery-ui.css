@@ -1,0 +1,56 @@
+/*! jQuery UI - v1.9.2 - 2012-11-23
+* http://jqueryui.com
+* Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css
+* Copyright (c) 2012 jQuery Foundation and other contributors Licensed MIT */
+
+
+.ui-widget-header{
+    font-weight:bold;
+    margin-left: 3px;
+    margin-top: 0px;
+    position: relative;
+}
+.ui-state-default ui-corner-top{
+    float: left;
+}
+.ui-state-default ui-corner-top a{
+    text-decoration: none;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    float: left;
+    padding: 0 1em;
+    text-decoration: none;
+    background:url(images/no_clicked.png) no-repeat;
+    width:112px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background: url("images/clicked.png") no-repeat;
+   
+}
+
+
+.ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-collapsible{
+      
+}
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    content: "";
+    display: table;
+}
+
+.ui-tabs .ui-tabs-nav li a, .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+    cursor: pointer;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    float: left;
+    
+    text-decoration: none;
+}
+
+#yw1_tab_0 .ui-tabs-panel ui-widget-content ui-corner-bottom{
+    width:100px;
+    
+}
