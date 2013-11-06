@@ -10,7 +10,7 @@
     'image_url',
     ),
    'htmlOptions' => array(
-          'style'=>'width:741px;'),
+          'style'=>'width:740px;'),
 )); ?>
     
  	<?php
