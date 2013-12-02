@@ -29,12 +29,15 @@ class Category extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('category_name, description', 'required'),
+			array('category_name, description, user_id', 'required'),
 			array('category_name', 'length', 'max'=>50),
 			array('description', 'length', 'max'=>200),
-			// The following rule is used by search().
+      array('user_id', 'length', 'max'=>10),
+      array('date_create', 'safe'),
+      array('date_update', 'safe'),
+     	// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, category_name, description', 'safe', 'on'=>'search'),
+			array('id, category_name, description, date_create, date_update, user_id', 'safe', 'on'=>'search'),
 		);
 	}
 
