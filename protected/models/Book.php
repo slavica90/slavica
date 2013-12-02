@@ -71,11 +71,10 @@ return parent::beforeSave();
                 'category_book(book_id, category_id)'),
       'ratings' => array(self::HAS_MANY, 'Ratings', 'book_id'),
       'review' => array(self::HAS_MANY, 'Review', 'book_id'),
+      'books' => array(self::HAS_MANY, 'Book', 'user_id'),
 		);
     
-    return array(
-			'books' => array(self::HAS_MANY, 'Book', 'user_id'),
-		);
+   
 	}
 
 	/**

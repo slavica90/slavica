@@ -8916,3 +8916,25 @@ Stack trace:
 REQUEST_URI=/slavica/index.php?r=user/admin
 HTTP_REFERER=http://192.168.10.104/slavica/index.php?r=user/index
 ---
+2013/11/14 11:47:53 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/mignix4/public_html/slavica/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/mignix4/p...')
+#1 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CClientScript.php(510): CAssetManager->publish('/home/mignix4/p...')
+#3 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CClientScript.php(547): CClientScript->getCoreScriptUrl()
+#4 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CClientScript.php(348): CClientScript->getPackageBaseUrl('jquery')
+#5 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CController.php(351): CClientScript->render('<!DOCTYPE html ...')
+#7 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CController.php(788): CController->processOutput('<!DOCTYPE html ...')
+#8 /home/mignix4/public_html/slavica/protected/controllers/SiteController.php(53): CController->render('index', Array)
+#9 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#14 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /home/mignix4/public_html/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/mignix4/public_html/slavica/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/slavica/
+---

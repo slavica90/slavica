@@ -49,7 +49,7 @@ class Category extends CActiveRecord
 			'categoryBooks' => array(self::HAS_MANY, 'CategoryBook', 'category_id'),
       
       'books'=>array(self::MANY_MANY, 'Book',
-                'category_book(category_id, book_id)'),
+                'category_book(category_id, book_id)'), 
 		);
 	}
 
