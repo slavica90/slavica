@@ -83,6 +83,7 @@
     </label>
     <?php } ?>
   </div> 
+  
   <div class="row">
      <?php $this->widget('CStarRating',array(
     'model'=>$model,
